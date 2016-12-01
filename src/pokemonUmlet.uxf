@@ -15,6 +15,7 @@
 - healthPoints : int
 - speed : double
 - name : String
+- number : int
 --
 + get/set
 bg=gray</panel_attributes>
