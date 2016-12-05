@@ -37,7 +37,7 @@ public class PokemonPanel extends JPanel
 		numberField.setEditable(false);
 		advancedArea.setEditable(false);
 		advancedArea.setWrapStyleWord(true);
-		advancedArea.setLineWrape(true);
+		advancedArea.setLineWrap(true);
 		pokemonLabel.setVerticalTextPosition(JLabel.BOTTOM);
 		pokemonLabel.setHorizontalTextPosition(JLabel.CENTER);
 		
