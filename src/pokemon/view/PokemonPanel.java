@@ -60,6 +60,12 @@ public class PokemonPanel extends JPanel
 	
 	private void setupPanel()
 	{
+		this.setLayout(baseLayout);
+		this.setPreferredSize(new Dimension(900, 600));
+		this.setBackground(Color.DARK_GRAY);
+		
+		numberField.setField.setEditable(false);
+		advancedArea.setEditable(false);
 		
 	}
 	
@@ -141,6 +147,20 @@ public class PokemonPanel extends JPanel
 		}
 		pokemonLabel.setIcon(pokemonIcon);
 		repaint();
+	}
+	
+	private boolean isValidDouble(String input)
+	{
+		
+	}
+	
+	private boolean isValidInteger(String input)
+	{
+		
+	}
+	private boolean isValidName(String name)
+	{
+		
 	}
 }
 
