@@ -64,9 +64,28 @@ public class PokemonPanel extends JPanel
 		this.setPreferredSize(new Dimension(900, 600));
 		this.setBackground(Color.DARK_GRAY);
 		
-		numberField.setField.setEditable(false);
+		numberField.setEditable(false);
 		advancedArea.setEditable(false);
+		advancedArea.setWrapStyleWord(true);
+		advancedArea.setLineWrap(true);
 		
+		pokemonLabel.setVerticalTextPosition(JLabel.BOTTOM);
+		pokemonLabel.setVerticalTextPosition(JLabel.BOTTOM);
+		
+		this.add(pokedexSelector);
+		this.add(healthField);
+		this.add(healthLabel);
+		this.add(combatField);
+		this.add(combatLabel);
+		this.add(speedField);
+		this.add(speedLabel);
+		this.add(nameField);
+		this.add(nameLabel);
+		this.add(numberField);
+		this.add(numberLabel);
+		this.add(advancedArea);
+		this.add(pokemonLabel);
+		this.add(updateButton);
 	}
 	
 	private void setupLayout()
