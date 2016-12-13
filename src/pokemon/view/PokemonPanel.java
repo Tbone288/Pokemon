@@ -1,14 +1,10 @@
 package pokemon.view;
 
 import java.awt.Color;
-
 import javax.swing.*;
-
 import pokemon.controller.PokemonController;
-
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class PokemonPanel extends JPanel
 {
@@ -123,6 +119,55 @@ public class PokemonPanel extends JPanel
 				}
 			}
 		});
+	
+	
+	this.addMouseListener(new MouseListener()
+	{
+		public void mouseEntered(MouseEvent entered)
+		{
+			
+		}
+		public void mouseReleased(MouseEvent released)
+		{
+		
+		}
+		public void mouseExited(MouseEvent exited)
+		{
+			
+		}
+		public void mouseClicked(MouseEvent clicked)
+		{
+		
+		}
+		public void mousePressed(MouseEvent pressed)
+		{
+		
+		}	
+	});
+	
+	this.addMouseMotionListener(new MouseMotionListener()
+	{
+		public void mouseDragged(MouseEvent dragged)
+		{
+			setRandomColor();
+		}
+		public void mouseMoved(MouseEvent moved)
+		{
+			if((Math.abs(moved.getX() - updateButton.getX()) < 5 ) || (Math.abs(moved.getY() - updateButton.getY()) < 5))
+			{
+				updateButton.setLocation(moved.getX() + 10, moved.getY() - 10 );
+			}
+		}
+	});
+	}		
+
+	private void setRandomColor()
+	{
+		int red = (int) (Math.random() * 256);
+		int green = (int) (Math.random() * 256);
+		int blue = (int) (Math.random() * 256);
+		
+		this.setBackground(new Color(red, green, blue));
 	}
 	
 	private void changeColorBasedOnData(String data)
