@@ -14,10 +14,11 @@ public class PokemonFrame
 		super();
 		this.baseController = baseController;
 		basePanel = new PokemonPanel(baseController);
-		setupFrame();
+	//	setupFrame();
 	}
+}
 	
-	private void setupFrame()
+/*	private void setupFrame()
 	{
 		this.setContentPane(basePanel);
 		this.setTitle("Pokedex");
@@ -26,3 +27,4 @@ public class PokemonFrame
 		this.setVisible(true);
 	}
 }
+*/

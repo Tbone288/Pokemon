@@ -112,7 +112,7 @@ public class PokemonPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-				if(isValidName(nameField.getText()) && isValidInteger(combatField.getText()) && isValidInteger(healthField.getText));
+//				if(isValidName(nameField.getText()) && isValidInteger(combatField.getText()) && isValidInteger(healthField.getText));
 				{
 					int selected = pokedexSelector.getSelectedIndex();
 					baseController.getPokedex().get(selected).setName(nameField.getText());
@@ -249,7 +249,8 @@ public class PokemonPanel extends JPanel
 		return isValid;
 		
 	}
-	private boolean isValidName(String name)
+}
+	/*private boolean isValidName(String name)
 	{
 		boolean isValid = false;
 		
@@ -259,5 +260,4 @@ public class PokemonPanel extends JPanel
 		}
 	}
 }
-
-
+*/
