@@ -12,7 +12,7 @@ public class PokemonPanel extends JPanel
 	private ImageIcon pokemonIcon;
 	private SpringLayout baseLayout;
 	private JButton updateButton;
-	private JComboBox pokedexSelector;
+	private JComboBox<String> pokedexSelector;
 	private JLabel pokemonLabel;
 	private JLabel healthLabel;
 	private JLabel combatLabel;
@@ -112,7 +112,7 @@ public class PokemonPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-//				if(isValidName(nameField.getText()) && isValidInteger(combatField.getText()) && isValidInteger(healthField.getText));
+				if(isValidName(nameField.getText()) && isValidInteger(combatField.getText()) && isValidInteger(healthField.getText));
 				{
 					int selected = pokedexSelector.getSelectedIndex();
 					baseController.getPokedex().get(selected).setName(nameField.getText());

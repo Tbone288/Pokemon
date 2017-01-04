@@ -1,22 +1,13 @@
 package pokemon.model;
 
-/*public interface Grass 
+public interface Grass 
 {
-	public void leafBlade()
-	{
-		
-	}
-	public void gigaDrain()
-	{
-		
-	}
-	public void leechSeed()
-	{
-		
-	}
-	public void grassKnot()
-	{
-		
-	}
+	public int leafStorm();
+
+	public int gigaDrain();
+	
+	public int leechSeed();
+
+	public int grassKnot();
+	
 }
-*/

@@ -1,6 +1,6 @@
 package pokemon.model;
 
-/*public class Treeko extends Pokemon implements Grass
+public class Treeko extends Pokemon implements Grass
 {
 	public Treeko()
 	{
@@ -11,16 +11,16 @@ package pokemon.model;
 		super(name, 252);
 	}
 	
-	public void leafBlade() 
+	public int leafStorm() 
 	{
-		
+		return 130;
 	}
 	
-	public void gigaDrain() 
+	public int gigaDrain() 
 	{
-		
+		return 75;
 	}
 	
 	
 }
-*/
+
