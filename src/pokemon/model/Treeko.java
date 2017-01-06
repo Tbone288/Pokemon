@@ -21,6 +21,16 @@ public class Treeko extends Pokemon implements Grass
 		return 75;
 	}
 	
+	public int leechSeed()
+	{
+		return 60;
+	}
+	
+	public int grassKnot()
+	{
+		return 10;
+	}
+	
 	
 }
 
