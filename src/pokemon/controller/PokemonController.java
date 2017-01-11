@@ -3,6 +3,8 @@ package pokemon.controller;
 import pokemon.model.*;
 import pokemon.view.PokemonFrame;
 import java.util.ArrayList;
+
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 
@@ -14,21 +16,23 @@ public class PokemonController
 public PokemonController()
 {
 	pokedex = new ArrayList<Pokemon>();
-	buildPokedex();
+	this.buildPokedex();
 	baseFrame = new PokemonFrame(this);
 }
 	
 	public void start()
 	{
-	//	JOptionPane.showMessageDialog(baseFrame, "Welcome to Pokemon Inheritance!");
+		JOptionPane.showMessageDialog(baseFrame, "Welcome to Pokemon Inheritance!");
+		new ImageIcon(getClass().getResource("/pokemon/view/images/Pokeball.png"));
 	}
 	private void buildPokedex()
 	{
-	//	pokedex.add(new Charmander("Supa Hot Fire"));
-	//	pokedex.add(new Bulbasaur("Onion Dinosaur"));
-	//	pokedex.add(new Flareon("Hot Dog"));
-	//	pokedex.add(new Squirtle("Koopa Troopa"));
-	//	pokedex.add(new Treeko("Gieco Lizard"));
+		pokedex.add(new Charizard("Supa Hot Fire"));
+		pokedex.add(new Bulbasaur("Onion Dinosaur"));
+		pokedex.add(new Pikachu("Electric Rat"));
+		pokedex.add(new Squirtle("Koopa Troopa"));
+		pokedex.add(new Mew("God Cat"));
+		pokedex.add(new Eevee("Doggo"));
 	}
 	
 	public String[] buildPokedexText()
@@ -45,11 +49,11 @@ public PokemonController()
 	
 	public void updateSelected(int index, String name, int combat, int health, double speed)
 	{
-	//	Pokemon current = pokemon.get(index);
-	//	current.setName(name);
-	//	current.setAttackPoints(combat);
-	//	current.setSpeed(speed);
-	//	current.setHealthPoints(health);
+		Pokemon pokemon = pokedex.get(index);
+		pokemon.setName(name);
+		pokemon.setAttackPoints(combat);
+		pokemon.setSpeed(speed);
+		pokemon.setHealthPoints(health);
 	}
 	
 	public ArrayList<Pokemon> getPokedex()

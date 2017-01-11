@@ -1,4 +1,4 @@
-package poke.tests;
+package pokemon.tests;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

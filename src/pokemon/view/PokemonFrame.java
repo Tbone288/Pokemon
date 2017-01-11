@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import pokemon.controller.PokemonController;
 import java.awt.Dimension;
 
-public class PokemonFrame 
+public class PokemonFrame extends JFrame
 {
 	private PokemonController baseController;
 	private PokemonPanel basePanel;
@@ -21,7 +21,7 @@ public class PokemonFrame
 	private void setupFrame()
 	{
 		this.setContentPane(basePanel);
-		this.setTitle("Pokedex");
+		this.setTitle("Pokemon Pokedex");
 		this.setSize(new Dimension(900, 600));
 		this.setResizable(false);
 		this.setVisible(true);

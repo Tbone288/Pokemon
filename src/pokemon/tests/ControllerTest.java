@@ -1,4 +1,4 @@
-package poke.tests;
+package pokemon.tests;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,9 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import poke.controller.PokemonController;
-import poke.model.Pokemon;
-import poke.view.PokemonFrame;
+import pokemon.controller.PokemonController;
+import pokemon.model.Pokemon;
+import pokemon.view.PokemonFrame;
 
 public class ControllerTest
 {
